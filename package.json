@@ -1,0 +1,41 @@
+{
+  "name": "@majus/testing",
+  "version": "0.0.1",
+  "description": "Common API used for an automated testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/majus/testing.git"
+  },
+  "keywords": [
+    "sinon",
+    "chai",
+    "testing",
+    "mocha",
+    "common",
+    "utility",
+    "api"
+  ],
+  "author": "Denis Perov <denis@majus.dev>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/majus/testing/issues"
+  },
+  "homepage": "https://github.com/majus/testing#readme",
+  "dependencies": {
+    "@sinonjs/fake-timers": "^9.1.1",
+    "chai": "^4.3.6",
+    "chai-as-promised": "^7.1.1",
+    "chai-datetime": "^1.8.0",
+    "chai-dom": "^1.11.0",
+    "chai-integer": "^0.1.0",
+    "chai-string": "^1.5.0",
+    "chai-url": "^1.0.4",
+    "delay": "^5.0.0",
+    "sinon": "^13.0.1",
+    "sinon-chai": "^3.7.0"
+  }
+}
