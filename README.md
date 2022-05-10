@@ -12,6 +12,7 @@ Common API used for an automated testing:
     - `sinon-chai` - integration with `sinon`, [docs](https://www.chaijs.com/plugins/sinon-chai/).
     - `chai-string` - various handly String assertions, [docs](https://www.chaijs.com/plugins/chai-string/).
     - `chai-dom` - DOM support, [docs](https://www.chaijs.com/plugins/chai-dom/).
+    - `chai-like` - Partial objects comparison, [docs](https://www.chaijs.com/plugins/chai-like/).
 
 # Usage example
 
@@ -49,6 +50,16 @@ describe('My tests', () => {
   it('my test for date', () => {
     const result = myStringFunc();
     expect(result).to.be.a('string').and.startWith('[');
+  });
+
+  it('my test for objects', () => {
+    const result = myObjectFunc();
+    expect(result).to.be.an('object').and.be.like({ a: 1 });
+  });
+
+  it('my test for arrays', () => {
+    const result = myArrayFunc();
+    expect(result).to.be.an('array').and.be.like([{ a: 1 }, { a: 2 }]);
   });
 
   it('my test for sinon', () => {

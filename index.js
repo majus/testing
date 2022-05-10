@@ -10,6 +10,7 @@ chai.use(require('chai-url'));
 chai.use(require('sinon-chai'));
 chai.use(require('chai-string'));
 chai.use(require('chai-dom'));
+chai.use(require('chai-like'));
 
 module.exports = {
   sinon,
